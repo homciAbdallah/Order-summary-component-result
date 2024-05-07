@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+
+:root {
+  --Paleblue: hsl(225, 100%, 94%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 98%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+  --fontFamily: "Red Hat Display", sans-serif;
+  --Weights500: 500;
+  --Weights700: 700;
+  --Weights900: 900;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Paleblue);
+  min-height: 100vh;
+  font-family: var(--fontFamily);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  align-items: center;
+  width: 400px;
+}
+.titel {
+  width: auto;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titel p {
+  text-align: center;
+  color: var(--Desaturatedblue);
+}
+header img {
+  width: 100%;
+}
+.annulePlan {
+  display: flex;
+  width: auto;
+  background-color: var(--Verypaleblue);
+  margin: 20px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+}
+.annulePlan div:first-child {
+  margin-left: 10px;
+}
+.annulePlan div:last-child a {
+  color: var(--Brightblue);
+  font-weight: var(--Weights900);
+}
+.annulePlan div:last-child a:hover {
+  color: var(--Brightblue);
+  font-size: 20px;
+}
+.annulePlan div:nth-child(3) {
+  margin-left: auto;
+  margin-right: 10px;
+}
+.annulePlan div:nth-child(2) {
+  font-size: 10px;
+  margin-left: 12px;
+}
+.annulePlan div:nth-child(2) span:nth-child(3) {
+  color: var(--Desaturatedblue);
+}
+footer {
+  width: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+footer button {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--Brightblue);
+  color: var(--Paleblue);
+  font-weight: var(--Weights900);
+  border: none;
+  box-shadow: -1px 15px 10px hsla(245, 83%, 69%, 0.3)
+}
+footer button a {
+  color: var(--Paleblue);
+  text-decoration: none;
+  font-weight: var(--Weights900);
+}
+footer button:hover {
+  background-color: hsl(245, 83%, 69%);
+}
+footer a {
+  color: var(--Desaturatedblue);
+  text-decoration: none;
+  font-weight: var(--Weights900);
+}
+footer a:hover {
+  color: var(--Darkblue);
+}
+@media screen and (max-width: 375px) {
+  body {
+    background-image: url(./images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--Paleblue);
+    background-size: contain;
+  }
+  .annulePlan div:nth-child(2) {
+    font-size: 8px;
+  }
+  .titel h1 {
+    font-size: 15px;
+  }
+  .titel p {
+    font-size: 10px;
+  }
+  footer a {
+    font-size: 10px;
+  }
+  main {
+    margin: 0 20px;
+  }
+  .annulePlan>div,
+  .annulePlan div span {
+    font-size: 8px;
+  }
+}
