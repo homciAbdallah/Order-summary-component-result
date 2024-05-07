@@ -86,7 +86,7 @@ footer {
   flex-direction: column;
   margin: 20px;
 }
-footer button {
+ .btn {
   width: 100%;
   padding: 20px;
   border-radius: 10px;
@@ -94,14 +94,16 @@ footer button {
   color: var(--Paleblue);
   font-weight: var(--Weights900);
   border: none;
-  box-shadow: -1px 15px 10px hsla(245, 83%, 69%, 0.3)
+  display: flex;
+  justify-content: center;
+   box-shadow: -1px 15px 10px hsla(245, 83%, 69%, 0.3)
 }
-footer button a {
+.btn a {
   color: var(--Paleblue);
   text-decoration: none;
   font-weight: var(--Weights900);
 }
-footer button:hover {
+footer .btn:hover {
   background-color: hsl(245, 83%, 69%);
 }
 footer a {
